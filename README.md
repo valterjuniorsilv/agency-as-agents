@@ -1,5 +1,7 @@
 # Nodus Agents
 
+[![CI](https://github.com/valterjuniorsilv/nodus-agents/actions/workflows/validate.yml/badge.svg)](https://github.com/valterjuniorsilv/nodus-agents/actions) [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT) [![Release](https://img.shields.io/github/v/release/valterjuniorsilv/nodus-agents)](https://github.com/valterjuniorsilv/nodus-agents/releases)
+
 > An "agency operated by AI agents" — the actual `.claude/agents/` setup that runs the [NodusHub](https://nodushub.com.br) operation. Each agent represents a role on the organizational chart of a small full-service agency (engineering, QA, prompt engineering, sales, prospecting, client success).
 >
 > This is not a generic agent template repo. It's the real configuration, opened so other founders can fork and adapt to their own operation.

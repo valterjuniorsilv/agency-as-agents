@@ -1,0 +1,28 @@
+name: Validate Agents
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+    branches: [main]
+  workflow_dispatch:
+
+jobs:
+  validate:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Validate agent frontmatter
+        shell: bash
+        run: |
+          set -e
+          fail=0
+          for f in nodus-*.md; do
+            echo "Checking $f"
+            head -1 "$f" | grep -q '^---$' || { echo "  ERR missing frontmatter open"; fail=1; }
+            grep -q '^name:' "$f" || { echo "  ERR missing name field"; fail=1; }
+            grep -q '^description:' "$f" || { echo "  ERR missing description field"; fail=1; }
+            grep -q '^tools:' "$f" || { echo "  ERR missing tools field"; fail=1; }
+          done
+          [ $fail -eq 0 ] && echo "All agents valid." || exit 1
