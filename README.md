@@ -1,6 +1,6 @@
 # Nodus Agents
 
-[![CI](https://github.com/valterjuniorsilv/nodus-agents/actions/workflows/validate.yml/badge.svg)](https://github.com/valterjuniorsilv/nodus-agents/actions) [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT) [![Release](https://img.shields.io/github/v/release/valterjuniorsilv/nodus-agents)](https://github.com/valterjuniorsilv/nodus-agents/releases)
+[![CI](https://github.com/valterjuniorsilv/agency-as-agents/actions/workflows/validate.yml/badge.svg)](https://github.com/valterjuniorsilv/agency-as-agents/actions) [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT) [![Release](https://img.shields.io/github/v/release/valterjuniorsilv/agency-as-agents)](https://github.com/valterjuniorsilv/agency-as-agents/releases)
 
 > An "agency operated by AI agents" — the actual `.claude/agents/` setup that runs the [NodusHub](https://nodushub.com.br) operation. Each agent represents a role on the organizational chart of a small full-service agency (engineering, QA, prompt engineering, sales, prospecting, client success).
 >
@@ -38,7 +38,7 @@ NodusHub runs 8 agents across 3 functional clusters:
 
 ```bash
 cd ~/.claude/agents
-git clone https://github.com/valterjuniorsilv/nodus-agents.git tmp
+git clone https://github.com/valterjuniorsilv/agency-as-agents.git tmp
 cp tmp/*.md ./
 rm -rf tmp
 ```
@@ -59,7 +59,7 @@ To fork for your context:
 
 ```bash
 # 1. Clone
-git clone https://github.com/valterjuniorsilv/nodus-agents.git ~/.claude/agents/my-agency
+git clone https://github.com/valterjuniorsilv/agency-as-agents.git ~/.claude/agents/my-agency
 
 # 2. Find/replace mentions
 cd ~/.claude/agents/my-agency
